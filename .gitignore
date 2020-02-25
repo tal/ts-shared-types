@@ -1,0 +1,8 @@
+# Generated files
+dist/
+node_modules/
+packages/client/build/
+*.tsbuildinfo
+
+# security
+.env

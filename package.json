@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=10.14"
+  },
+  "scripts": {
+    "clean": "lerna run clean",
+    "build": "lerna run build",
+    "watch": "tsc -b packages -w",
+    "client": "yarn --cwd ./packages/client start",
+    "prestart": "yarn run build",
+    "start": "node packages/server/dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^13.0",
+    "prettier": "^1.19",
+    "typescript": "^3.7",
+    "lerna": "^3.19"
+  }
+}

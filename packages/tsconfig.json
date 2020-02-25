@@ -1,0 +1,8 @@
+{
+  "files": [],
+  "references": [
+    // { "path": "./client" }, Client doesnt need to be here since it has a webpack build service
+    { "path": "./common" },
+    { "path": "./server" }
+  ]
+}
